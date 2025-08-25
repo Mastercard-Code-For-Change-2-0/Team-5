@@ -14,16 +14,16 @@ export default function AdminDashboard() {
   }, []);
 
   return (
-    <div className="dashboard-container">
-      <h1 className="dashboard-title">Admin Dashboard</h1>
+    <div className="max-w-6xl mx-auto py-8 px-4 font-sans">
+      <h1 className="text-3xl font-bold mb-8 text-emerald-700 text-center">Admin Dashboard</h1>
       {events.length > 0 ? (
-        <div className="event-grid">
+        <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6">
           {events.map((event) => (
             <EventCard key={event.id} event={event} />
           ))}
         </div>
       ) : (
-        <p className="no-events">No events found</p>
+        <p className="text-center text-gray-500">No events found</p>
       )}
     </div>
   );

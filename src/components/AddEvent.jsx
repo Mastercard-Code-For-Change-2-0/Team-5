@@ -32,7 +32,10 @@ function AddEvent({ onSave }) {
   return (
     <div className="min-h-screen bg-gradient-to-br from-gray-50 to-gray-100 p-8 flex items-center justify-center">
       <div className="w-full max-w-3xl bg-white rounded-2xl shadow-xl border border-gray-100 p-8 transition hover:shadow-2xl">
-        <h1 className="text-3xl font-bold text-gray-800 mb-2">➕ Add New Event</h1>
+  <h1 className="text-3xl font-bold text-gray-800 mb-2">
+  <span className="text-green-700 text-4xl">+</span> Add New Event
+</h1>
+
         <p className="text-gray-500 mb-6">
           Fill in the details below to create a new event.
         </p>
@@ -96,7 +99,7 @@ function AddEvent({ onSave }) {
           <div className="flex justify-end">
             <button
               type="submit"
-              className="flex items-center gap-2 bg-blue-600 text-white px-6 py-2 rounded-xl font-medium shadow-md hover:bg-blue-700 hover:shadow-lg transition"
+              className="flex items-center gap-2 bg-emerald-600 text-white px-6 py-2 rounded-xl font-medium shadow-md hover:bg-emerald-700 hover:shadow-lg transition"
             >
               <Save className="w-5 h-5" /> Save Event
             </button>
