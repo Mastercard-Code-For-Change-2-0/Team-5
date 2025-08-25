@@ -3,6 +3,7 @@ import { Route, Routes } from "react-router-dom";
 import Events from "./pages/events";
 import RegisterForm from "./pages/RegisterForm";
 import AdminDashboard from "./pages/AdminDashboard";
+import AddEvent from "./components/AddEvent"
 
 function App() {
   const [darkMode, setDarkMode] = useState(false);
@@ -94,6 +95,7 @@ function App() {
       />
       <Route path="/register" element={<RegisterForm darkMode={darkMode} />} />
       <Route path="/admin" element={<AdminDashboard />} />
+      <Route path="/add-event" element={<AddEvent />} />
     </Routes>
   );
 }
