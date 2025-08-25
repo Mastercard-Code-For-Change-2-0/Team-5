@@ -1,8 +1,8 @@
 export default function ContactForm() {
   return (
-    <section className="py-16 bg-white">
+    <section className="py-16 bg-pink-50 font-sans">
       <div className="max-w-2xl mx-auto text-center mb-10">
-        <h2 className="text-3xl font-bold text-gray-800">Contact Us</h2>
+        <h2 className="text-3xl font-bold text-emerald-700">Contact Us</h2>
         <p className="text-gray-600 mt-2">
           We’d love to hear from you. Fill out the form below and we’ll get back to you soon.
         </p>
@@ -12,21 +12,21 @@ export default function ContactForm() {
         <input
           type="text"
           placeholder="Your Name"
-          className="border rounded-xl p-3 w-full focus:ring-2 focus:ring-red-400 focus:outline-none"
+          className="border rounded-xl p-3 w-full focus:ring-2 focus:ring-emerald-400 focus:outline-none"
         />
         <input
           type="email"
           placeholder="Your Email"
-          className="border rounded-xl p-3 w-full focus:ring-2 focus:ring-red-400 focus:outline-none"
+          className="border rounded-xl p-3 w-full focus:ring-2 focus:ring-emerald-400 focus:outline-none"
         />
         <textarea
           placeholder="Your Message"
           rows={5}
-          className="border rounded-xl p-3 w-full focus:ring-2 focus:ring-red-400 focus:outline-none"
+          className="border rounded-xl p-3 w-full focus:ring-2 focus:ring-emerald-400 focus:outline-none"
         ></textarea>
         <button
           type="submit"
-          className="bg-red-500 hover:bg-red-600 text-white font-semibold px-6 py-3 rounded-xl transition-colors duration-200"
+          className="bg-emerald-600 hover:bg-emerald-700 text-white font-semibold px-6 py-3 rounded-xl transition-colors duration-200"
         >
           Send Message
         </button>

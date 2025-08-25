@@ -20,9 +20,9 @@ export default function EventsSection() {
   ];
 
   return (
-    <section className="py-16 bg-white text-center">
+    <section className="py-16 bg-pink-50 text-center font-sans">
       <div className="max-w-2xl mx-auto mb-12">
-        <h2 className="text-3xl font-bold text-gray-800">Upcoming Events</h2>
+        <h2 className="text-3xl font-bold text-emerald-700">Upcoming Events</h2>
         <p className="text-gray-600 mt-2">
           Join our initiatives and be part of the change we aim to create.
         </p>
@@ -32,14 +32,14 @@ export default function EventsSection() {
         {events.map((event, i) => (
           <div
             key={i}
-            className="p-6 bg-gray-50 border border-gray-100 rounded-2xl shadow-md hover:shadow-lg transition-shadow"
+            className="p-6 bg-white border border-gray-100 rounded-2xl shadow-md hover:shadow-lg transition-shadow"
           >
             <div className="flex justify-center">{event.icon}</div>
-            <h3 className="text-xl font-semibold mt-4">{event.title}</h3>
+            <h3 className="text-xl font-semibold mt-4 text-emerald-800">{event.title}</h3>
             <p className="text-gray-600 mt-2 mb-6">{event.desc}</p>
             <button
               type="button"
-              className="bg-green-600 hover:bg-green-700 text-white font-medium px-5 py-2 rounded-xl transition-colors duration-200"
+              className="bg-emerald-600 hover:bg-emerald-700 text-white font-medium px-5 py-2 rounded-xl transition-colors duration-200"
             >
               Register
             </button>
